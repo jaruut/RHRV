@@ -1,7 +1,7 @@
 AnalyzeHRbyEpisodes <-
 function(HRVData, Tag="", func, ..., verbose=NULL) {
 # ----------------------------------------------
-# Analyzes Heart Rate using Episodes information
+# Analyzes RR using Episodes information
 # ----------------------------------------------
 #  Tag -> specifies tag of episodes
 #  func -> function to apply 
@@ -14,7 +14,7 @@ function(HRVData, Tag="", func, ..., verbose=NULL) {
 
   HRVData = HandleVerboseArgument(HRVData, verbose)
   VerboseMessage(HRVData$Verbose, 
-	paste("Applying function to heart rate signal using episodic information"))
+	paste("Applying function to RR signal signal using episodic information"))
   VerboseMessage(HRVData$Verbose, paste0("Function: ", nameFunc))
    
   CheckEpisodes(HRVData)
